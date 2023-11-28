@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    #small {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box1 {
+      width: 100vw;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box2 {
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box3 {
+      width: 100vw;
+      height: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img {
+      width: 70%;
+      height: 40%;
+    }
+
+    .object {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      width: 70%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width:992px) {
+      #small {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="small">
+    <div class="box1">
+      <div class="img"><img src="./media_query/wda.png" class="object"></div>
+      <h1>泰山職訓局</h1>
+      <div class="text">
+        <h2>從零開始的網頁設計課程</h2>
+        待業民眾完全免費轉職網頁開發人員　掌握就業必備職能由淺入深學習技術　強化職場的競爭力
+      </div>
+    </div>
+    <hr>
+    <div class="box2">
+      <p><img src="./media_query/html.png" alt=""></p>
+    </div>
+    <div class="box3">
+      <p><img src="./media_query/css.png" alt=""></p>
+    </div>
+  </div>
+</body>
+
+</html>
